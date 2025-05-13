@@ -1,2 +1,2 @@
 # CritiCall
-CritiCall es una software que simula una botonera
+CritiCall pagina de raking de peliculas
