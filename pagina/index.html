@@ -6,50 +6,31 @@
   <title>CritiCall</title>
   <link rel="stylesheet" href="dis.css">
   <style>
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #222;
-      color: white;
+    body{
+      background: linear-gradient(#1A3C7E,#ADD8E6
+);
+
     }
 
-    .logo {
-      font-weight: bold;
-    }
+ .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  align-items: center;
+}
 
-    .menu {
-      flex: 1;
-      text-align: center;
-    }
+  
 
-    .auth-links {
-      display: flex;
-      gap: 10px;
-    }
-
-    .auth-links a {
-      color: white;
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1px solid white;
-      border-radius: 4px;
-    }
-
-    .auth-links a:hover {
-      background-color: white;
-      color: #222;
-    }
+   
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">LOGO</div>
-    <nav class="menu">MENÚ DE NAVEGACIÓN</nav>
+  <header class="header">
+    <img src="Portadas/CritiCall.jpeg" alt="Logo" class="logo" />
     <div class="auth-links">
-      <a href="login.php">Iniciar sesión</a>
-      <a href="register.php">Registrarse</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
     </div>
   </header>
 
@@ -62,9 +43,17 @@
     <h2>MÁS PELÍCULAS</h2>
     <div class="galeria">
       <button class="nav">&#x25C0;</button>
-      <div class="imagen"><img src="carpeta de fotos/Faight club.jpeg" alt=""></div>
-      <div class="imagen grande"><img src="carpeta de fotos/La novia cadaver.jpeg" alt=""></div>
-      <div class="imagen"><img src="carpeta de fotos/Sonic 3.jpeg" alt=""></div>
+<div class="slides">
+    <img src="../portada/Contra lo imposible.jpeg" alt="" onclick="openModal()">
+    <img src="../portada/Alicia.jpeg" alt="" onclick="openModal()">
+    <img src="../portada/Faight club.jpeg" alt="" onclick="openModal()">
+    <img src="../portada/La novia cadaver.jpeg" alt="" onclick="openModal()">
+    <img src="../portada/Maria antonieta.jpeg" alt="" onclick="openModal()">
+    <img src="../portada/Pearl.jpeg" alt="" onclick="openModal()">
+    <img src="../Portada/The Batman.jpeg" alt="" onclick="openModal()">
+    <img src="CritiCall/Portada/ventajas de ser invisible.jpeg" alt="" onclick="openModal()">
+</div>
+
       <button class="nav">&#x25B6;</button>
     </div>
     <div class="puntos">. . .</div>
