@@ -1,89 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ 
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(#1A3C7E, #ADD8E6);
+    }
 
-body {
-  font-family: sans-serif;
-  background: #f0f0f0;
-}
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffa3a3;
+    }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #333;
-  color: white;
-  padding: 1rem;
-}
+    .logo {
+      width: 10%;
+    }
 
-.logo {
-  width: 10%;
-}
+    .auth-links a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
 
-.menu {
-  width: 70%;
-  text-align: right;
-}
+    .slides {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
 
-.destacada {
-  text-align: center;
-  padding: 2rem;
-}
+    .slides img {
+      width: 10%;
+      height: 15%;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
 
+    .slides img:hover {
+      transform: scale(1.05);
+    }
 
-.mas-peliculas {
-  padding: 2rem;
-  text-align: center;
-}
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #222;
+      color: white;
+      padding: 1rem;
+    }
 
-.galeria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
+    .cuadro {
+      width: 60px;
+      height: 60px;
+      background: #444;
+    }
 
-.imagen {
-  width: 10%;
-  height: 10%;
-  background: #ccc;
-}
-
-.imagen.grande {
-  width: 10%;
-  height: 15%;
-}
-
-.nav {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.puntos {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: #222;
-  color: white;
-  padding: 1rem;
-}
-
-.cuadro {
-  width: 60px;
-  height: 60px;
-  background: #444;
-}
-
-.contacto {
-  width: 100px;
-}
+    .cuadro.contacto {
+      width: 100px;
+    }
