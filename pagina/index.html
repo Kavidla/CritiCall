@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CritiCall</title>
   <link rel="stylesheet" href="dis.css">
- 
-  </style>
 </head>
 <body>
-  <header class="header">
-    <img src="Portadas/CritiCall.jpeg" alt="Logo" class="logo" />
-    <div class="auth-links">
-      <a href="login.php">Login</a>
-      <a href="register.php">Register</a>
-    </div>
-  </header>
 
-  <section class="slides">
-    <img src="Portadas/Contra lo imposible.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portadas/Marrowbone.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portadas/The Batman.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portadas/Sonic 3.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portadas/The Batman.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portadas/Monster.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portadas/Alicia.jpeg" alt="Pelicula" onclick="openModal()">
-    <img src="Portada/ventajas de ser invisible.jpeg" alt="Pelicula" onclick="openModal()">
+  <div class="auth-links">
+    <a href="login.php">Login</a>
+    <a href="register.php">Register</a>
+  </div>
+
+  <div class="top-section">
+    <img src="Portadas/CritiCall.jpeg" alt="Logo" class="logo" />
+    <input type="text" class="search-box" placeholder="Buscar películas">
+  </div>
+
+  <section class="slider-container">
+    <button class="prev" onclick="moveSlide(-1)">‹</button>
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <img src="Portadas/Contra lo imposible.jpeg" alt="Pelicula">
+        <img src="Portadas/Marrowbone.jpeg" alt="Pelicula">
+        <img src="Portadas/The Batman.jpeg" alt="Pelicula">
+        <img src="Portadas/Sonic 3.jpeg" alt="Pelicula">
+        <img src="Portadas/Monster.jpeg" alt="Pelicula">
+        <img src="Portadas/Alicia.jpeg" alt="Pelicula">
+        <img src="Portadas/Faight club.jpeg" alt="Pelicula">
+      </div>
+    </div>
+    <button class="next" onclick="moveSlide(1)">›</button>
   </section>
 
   <footer>
-    <div class="cuadro"></div>
-    <div class="cuadro"></div>
-    <div class="cuadro contacto">CONTACTOS</div>
+  
   </footer>
+
+  <script src="basura.js"></script>
 </body>
 </html>
