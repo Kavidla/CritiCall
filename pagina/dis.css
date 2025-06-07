@@ -41,6 +41,7 @@ body {
 .logo {
   height: 160px;
   width: auto;
+  border-radius: 50%;
 }
 
 .search-box {
@@ -108,4 +109,31 @@ footer {
 
 .cuadro.contacto {
   width: 100px;
+}
+#historial {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+#historial li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+.foto-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.foto-perfil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  object-fit: cover;  
+  object-position: center;
+  margin-bottom: 0.5rem;
+  border: 2px solid #ccc;
 }

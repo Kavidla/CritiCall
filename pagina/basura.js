@@ -17,3 +17,20 @@ function moveSlide(direction) {
 
   slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
+// Vista previa de foto
+document.getElementById('fotoInput').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  const preview = document.getElementById('preview');
+
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = () => preview.src = reader.result;
+    reader.readAsDataURL(file);
+  }
+});
+
+// Simulación de guardado
+document.getElementById('perfilForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Cambios guardados con éxito (simulado)');
+});
