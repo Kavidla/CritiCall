@@ -10,14 +10,14 @@ function moveSlide(direction) {
 
   // Control infinito
   if (currentSlide > totalSlides - visibleSlides) {
-    currentSlide = 0; // reinicia al principio
+    currentSlide = 0; 
   } else if (currentSlide < 0) {
-    currentSlide = totalSlides - visibleSlides; // salta al final
+    currentSlide = totalSlides - visibleSlides; 
   }
 
   slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
-// Vista previa de foto
+
 document.getElementById('fotoInput').addEventListener('change', function(e) {
   const file = e.target.files[0];
   const preview = document.getElementById('preview');
@@ -29,7 +29,7 @@ document.getElementById('fotoInput').addEventListener('change', function(e) {
   }
 });
 
-// Simulación de guardado
+
 document.getElementById('perfilForm').addEventListener('submit', function(e) {
   e.preventDefault();
   alert('Cambios guardados con éxito (simulado)');
