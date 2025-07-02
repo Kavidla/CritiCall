@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.contenedor-chat {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-pelicula {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.imagen-pelicula {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalles {
+    flex: 1;
+}
+
+.mensajes h2 {
+    margin-bottom: 10px;
+}
+
+.formulario-mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-mensaje textarea {
+    resize: vertical;
+    min-height: 80px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario-mensaje button {
+    align-self: flex-end;
+    padding: 8px 20px;
+    background-color: #36728d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista-mensajes {
+    margin-top: 20px;
+}
+
+.mensaje {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}

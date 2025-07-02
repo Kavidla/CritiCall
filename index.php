@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dis.css">
     <style>
         .logout-btn {
-            padding: 5px 10px;
+            padding: 15px 30px;
             background-color: #c0392b;
             color: white;
             border: none;
